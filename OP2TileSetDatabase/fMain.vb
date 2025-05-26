@@ -16,11 +16,11 @@ Public Class fMain
 
 #Region "Private Fields"
 
-    '   TODO:       Divide the map up into 2x2 blocks and do block adjacency analysis
+    ' TODO:       Divide the map up into 2x2 blocks and do block adjacency analysis
 
     Private ApplicationName As String = "OP2TileSetDatabase"
-    Private Version As String = "0.1.2"
-    Private Build As String = "0018"
+    Private Version As String = "0.3.0"
+    Private Build As String = "0020"
 
     Private DatabasePath As String = "D:\op2_tileset_database.json"
     Private DatabaseReportPath As String = "D:\op2_tileset_database_report.txt"
@@ -197,8 +197,7 @@ Public Class fMain
     Private Sub ExportDatabase(ByVal filePath As String)
         ' Export the database to a JSON file
         Try
-            ' Save the database
-            tileDatabase.SaveToFile(filePath)
+            tileDatabase.SaveToFile(filePath)       ' Save the database
 
             AppendToConsole($"Database exported successfully to: {filePath}")
             AppendToConsole($"File size: {New System.IO.FileInfo(filePath).Length} bytes")
@@ -216,8 +215,7 @@ Public Class fMain
         'Export the block database to a JSON file
 
         Try
-            ' Save the database
-            blockDatabase.SaveToFile(filePath)
+            blockDatabase.SaveToFile(filePath)      ' Save the database
 
             AppendToConsole($"Block database exported successfully to: {filePath}")
             AppendToConsole($"File size: {New System.IO.FileInfo(filePath).Length} bytes")
