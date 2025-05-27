@@ -1,5 +1,6 @@
 ﻿Imports Newtonsoft.Json
 
+' OP2TileSetDatabase
 ' TileAdjacencyDatabase.vb
 
 Public Class SerializableTileAdjacencyData
@@ -107,7 +108,6 @@ End Class
 
 Public Class TileAdjacencyInfo
 
-    ' Make this public so JSON can serialize it
     Public AdjacencyByDirection As Dictionary(Of AdjacencyDirection, Dictionary(Of Integer, Integer))
 
     Public Sub New()

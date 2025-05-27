@@ -3,7 +3,6 @@ Imports System.Media
 Imports Newtonsoft.Json
 Imports Newtonsoft.Json.Linq
 
-
 ' OP2TileSetDatabase
 ' https://github.com/leviathan400/OP2TileSetDatabase
 '
@@ -20,7 +19,7 @@ Public Class fMain
 
     Private ApplicationName As String = "OP2TileSetDatabase"
     Private Version As String = "0.3.0"
-    Private Build As String = "0020"
+    Private Build As String = "0021"
 
     Private DatabasePath As String = "D:\op2_tileset_database.json"
     Private DatabaseReportPath As String = "D:\op2_tileset_database_report.txt"

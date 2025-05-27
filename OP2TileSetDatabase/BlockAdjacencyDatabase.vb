@@ -1,5 +1,8 @@
 ﻿Imports Newtonsoft.Json
 
+' OP2TileSetDatabase
+' BlockAdjacencyDatabase.vb
+
 Public Enum BlockDirection
     North
     East
@@ -45,8 +48,6 @@ Public Class BlockAdjacencyDatabase
         End If
         Return 0
     End Function
-
-    ' Add these methods to your BlockAdjacencyDatabase class
 
     Public Function GetAllBlocks() As IEnumerable(Of TileBlock)
         Return adjacencyData.Keys

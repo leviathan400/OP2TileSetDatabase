@@ -14,7 +14,7 @@ Inspired by the [Op2TileDB](https://github.com/Sirbomber/Op2TileDB) project.
 
 ## op2_tileset_database.json
 
-The `op2_tileset_database.json` file contains a comprehensive database of tile adjacency relationships extracted from Outpost 2 map analysis (from the JSON map format). This database records how frequently different tiles appear next to each other across all analyzed maps.
+The `op2_tileset_database.json` file contains a database of tile adjacency relationships extracted from map analysis (from the JSON map format). This database records how frequently different tiles appear next to each other across all analyzed maps.
 
 ## Information
 
